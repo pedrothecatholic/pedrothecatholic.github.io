@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+
+      h4 {
+        text-align: center;
+        background-color: #bebad0;
+      }
+
+      form {
+        width: 100%;
+        border: 1px solid #333;
+        border-radius: 3px;
+        padding: 0.5rem;
+        line-height: 32px;
+      }
+
+      input {
+        color: #fff;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+      }
+
+      input[type="radio"] {
+        background-color: initial;
+        cursor: default;
+        appearance: auto;
+        box-sizing: border-box;
+        margin: 0px 3px 0px 5px !important;
+        padding: initial;
+        border: initial;
+      }
+
+      textarea {
+        width: 100%;
+        height: 20vh;
+        padding: 8px 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 12px;
+        resize: none;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10rem;
+      }
+
+      .observation {
+        width: max-content;
+        height: fit-content;
+        text-align: start;
+      }
+
+      .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        gap: 0.5rem;
+      }
+
+      .buttons {
+        background-color: #facada;
+        border: 1px solid #bbbbbb50;
+        border-radius: 3px;
+        padding: 1rem 2rem;
+        cursor: pointer;
+      }
+
+      .radio-button-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <header>
+        <h4>SISTEMA DE GESTÃO ACADÊMICA</h4>
+        <h2>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+      </header>
+      <div>
+        <label for="">Login:</label>
+        <input type="text" placeholder="" />
+      </div>
+      <div>
+        <label for="">Senha:</label>
+        <input type="text" placeholder="" />
+      </div>
+      <div>
+        <label for="">Status: </label>
+        <select name="cars" id="cars">
+          <option value="#" label="Selecione seu status" />
+          <option value="ativo">Ativo</option>
+          <option value="inativo">Inativo</option>
+        </select>
+      </div>
+      <div class="radio-button-container">
+        <label for="">Tipo: </label>
+        <input type="radio" />
+        <span>Técnico</span>
+        <input type="radio" />
+        <span>Professor</span>
+        <input type="radio" />
+        <span>Aluno</span>
+      </div>
+      <div>
+        <label for="">Data de Criação: </label>
+        <input type="text" placeholder="" />
+      </div>
+      <div class="radio-button-container">
+        <label for="">Perfil: </label>
+        <input type="radio" />
+        <span>Convidado</span>
+        <input type="radio" />
+        <span>Administrador</span>
+      </div>
+      <div class="observation">
+        <label for="">Observações: </label>
+        <textarea></textarea>
+      </div>
+      <div>
+        <label for="">Módulos: </label>
+        <input type="radio" />
+        <span>Compras</span>
+        <input type="radio" />
+        <span>Biblioteca</span>
+        <input type="radio" />
+        <span>Acadêmico</span>
+        <input type="radio" />
+        <span>Documentação</span>
+        <input type="radio" />
+        <span>Recursos Humanos</span>
+      </div>
+      <div class="button-container">
+        <button class="buttons">Cadastrar</button>
+        <button class="buttons">Excluir</button>
+      </div>
+    </form>
+  </body>
+</html>
